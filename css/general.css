@@ -48,9 +48,9 @@ Medium: 11px
 */
 
 
-/*********************************/
+/************/
 /* CSS RESET*/
-/*********************************/
+/************/
 * {
     padding: 0;
     margin: 0;
@@ -76,9 +76,9 @@ strong {
     font-weight: 500;
 }
 
-/*********************************/
+/************/
 /* CSS GRID */
-/*********************************/
+/************/
 
 .container {
     /* 1140px */
@@ -109,9 +109,9 @@ strong {
     align-items: center;
 }
 
-/*********************************/
+/******************************/
 /* GENERAL REUSABLE COMPONENTS*/
-/*********************************/
+/******************************/
 
 .heading-primary,
 .heading-secondary {
@@ -158,7 +158,7 @@ strong {
     border-radius: 9px;
 
     /* Put transition on original "state" */
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -188,6 +188,34 @@ strong {
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2PX;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
+/******************************/
+/* HELPER CLASSES */
+/******************************/
+
 .margin-right-sm {
     margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
 }
