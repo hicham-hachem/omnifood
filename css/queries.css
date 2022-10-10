@@ -3,10 +3,11 @@ Instead, 1rem = 1em = 16px */
 /* 1344px/16px = 84em */
 
 /************************************/
-/* BELLOW 1344PX (Smaller desktops) */
+/* BELLOW 1344PX (Smaller Desktops) */
 /************************************/
 
 @media (max-width: 84em) {
+
     /****************/
     /* HERO SECTION */
     /****************/
@@ -18,6 +19,81 @@ Instead, 1rem = 1em = 16px */
     .heading-primary {
         font-size: 4.4rem;
     }
+
+    /************************/
+    /* TESTIMONIALS SECTION */
+    /************************/
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/******************************************************/
+
+/*************************************/
+/* BELLOW 1200px (Landscape Tablets) */
+/*************************************/
+
+@media (max-width: 75em) {
+
+    /* 9px/16px = 0.5625rem
+    0.5625rem/1rem * 100% = 56.25% */
+
+    /************/
+    /* CSS RESET*/
+    /************/
+
+    html {
+        font-size: 56.25%;
+    }
+
+    /************/
+    /* CSS GRID */
+    /************/
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    /******************************/
+    /* GENERAL REUSABLE COMPONENTS*/
+    /******************************/
+
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+
+    /**********/
+    /* HEADER */
+    /**********/
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    /**************/
+    /* NAVIGATION */
+    /**************/
+
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+
+    /****************/
+    /* HERO SECTION */
+    /****************/
+
+    .hero {
+        gap: 4.8rem;
+    }
+
 
     /***********************/
     /* FEATURED IN SECTION */
@@ -38,9 +114,10 @@ Instead, 1rem = 1em = 16px */
     /* TESTIMONIALS SECTION */
     /************************/
 
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
+    .testimonials-container {
+        padding: 9.6rem 3.2rem;
     }
+
 
     /*******************/
     /* Pricing SECTION */
@@ -60,6 +137,31 @@ Instead, 1rem = 1em = 16px */
 /******************************************************/
 
 @media (max-width: 600px) {
+
+    /************/
+    /* CSS RESET*/
+    /************/
+
+    /************/
+    /* CSS GRID */
+    /************/
+
+    /******************************/
+    /* GENERAL REUSABLE COMPONENTS*/
+    /******************************/
+
+    /******************/
+    /* HELPER CLASSES */
+    /******************/
+
+    /**********/
+    /* HEADER */
+    /**********/
+
+    /**************/
+    /* NAVIGATION */
+    /**************/
+
     /****************/
     /* HERO SECTION */
     /****************/
