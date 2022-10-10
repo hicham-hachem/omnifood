@@ -30,7 +30,7 @@ Instead, 1rem = 1em = 16px */
 
 }
 
-/******************************************************/
+/******************************************************************************************/
 
 /*************************************/
 /* BELLOW 1200px (Landscape Tablets) */
@@ -38,13 +38,12 @@ Instead, 1rem = 1em = 16px */
 
 @media (max-width: 75em) {
 
-    /* 9px/16px = 0.5625rem
-    0.5625rem/1rem * 100% = 56.25% */
-
     /************/
     /* CSS RESET*/
     /************/
 
+    /* 9px/16px = 0.5625rem
+    0.5625rem/1rem * 100% = 56.25% */
     html {
         font-size: 56.25%;
     }
@@ -94,22 +93,6 @@ Instead, 1rem = 1em = 16px */
         gap: 4.8rem;
     }
 
-
-    /***********************/
-    /* FEATURED IN SECTION */
-    /***********************/
-
-
-    /************************/
-    /* HOW IT WORKS SECTION */
-    /************************/
-
-
-    /*****************/
-    /* MEALS SECTION */
-    /*****************/
-
-
     /************************/
     /* TESTIMONIALS SECTION */
     /************************/
@@ -118,6 +101,110 @@ Instead, 1rem = 1em = 16px */
         padding: 9.6rem 3.2rem;
     }
 
+}
+
+/******************************************************************************************/
+
+/*************************************/
+/* BELLOW 944px (Tablets) */
+/*************************************/
+
+@media (max-width: 59em) {
+
+    /************/
+    /* CSS RESET*/
+    /************/
+
+    /* 8px/16px = 0.5rem
+    0.5rem/1rem * 100% = 50% */
+    html {
+        font-size: 50%;
+    }
+
+    /************/
+    /* CSS GRID */
+    /************/
+
+    /******************************/
+    /* GENERAL REUSABLE COMPONENTS*/
+    /******************************/
+
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+
+    /******************/
+    /* HELPER CLASSES */
+    /******************/
+
+    /**********/
+    /* HEADER */
+    /**********/
+
+    /**************/
+    /* NAVIGATION */
+    /**************/
+
+    /****************/
+    /* HERO SECTION */
+    /****************/
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .hero-text-box,
+    .hero-img-box {
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 60%;
+    }
+
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+
+    /***********************/
+    /* FEATURED IN SECTION */
+    /***********************/
+
+    .logo img{
+        height: 2.4rem;
+    }
+
+    /************************/
+    /* HOW IT WORKS SECTION */
+    /************************/
+
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    /*****************/
+    /* MEALS SECTION */
+    /*****************/
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    /************************/
+    /* TESTIMONIALS SECTION */
+    /************************/
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
 
     /*******************/
     /* Pricing SECTION */
@@ -128,13 +215,24 @@ Instead, 1rem = 1em = 16px */
     /* CTA SECTION */
     /***************/
 
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
 
     /**********/
     /* FOOTER */
     /**********/
 }
 
-/******************************************************/
+/******************************************************************************************/
+
+/*************************************/
+/* BELLOW 1200px (Landscape Tablets) */
+/*************************************/
 
 @media (max-width: 600px) {
 

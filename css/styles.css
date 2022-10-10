@@ -224,8 +224,7 @@
 }
 
 .meal-content {
-    padding: 4.8rem;
-    padding-top: 3.2rem;
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
@@ -298,9 +297,9 @@
 /************************/
 
 .section-testimonials {
+    background-color: #fdf2e9;
     display: grid;
     grid-template-columns: 55fr 45fr;
-    background-color: #fdf2e9;
     align-items: center;
 }
 
