@@ -121,10 +121,6 @@ Instead, 1rem = 1em = 16px */
         font-size: 50%;
     }
 
-    /************/
-    /* CSS GRID */
-    /************/
-
     /******************************/
     /* GENERAL REUSABLE COMPONENTS*/
     /******************************/
@@ -132,14 +128,6 @@ Instead, 1rem = 1em = 16px */
     .btn--form {
         margin-top: 1.2rem;
     }
-
-    /******************/
-    /* HELPER CLASSES */
-    /******************/
-
-    /**********/
-    /* HEADER */
-    /**********/
 
     /**************/
     /* NAVIGATION */
@@ -224,7 +212,6 @@ Instead, 1rem = 1em = 16px */
         margin-top: 3.2rem;
     }
 
-
     /***********************/
     /* FEATURED IN SECTION */
     /***********************/
@@ -261,11 +248,6 @@ Instead, 1rem = 1em = 16px */
         grid-template-columns: repeat(6, 1fr);
     }
 
-    /*******************/
-    /* Pricing SECTION */
-    /*******************/
-
-
     /***************/
     /* CTA SECTION */
     /***************/
@@ -277,10 +259,68 @@ Instead, 1rem = 1em = 16px */
     .cta-form {
         grid-template-columns: 1fr;
     }
+}
+
+/******************************************************************************************/
+
+/*************************************/
+/* BELLOW 704px (Smaller Tablets) */
+/*************************************/
+
+@media (max-width: 44em) {
+
+    /************/
+    /* CSS GRID */
+    /************/
+
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /******************************/
+    /* GENERAL REUSABLE COMPONENTS*/
+    /******************************/
+
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+    /*****************/
+    /* MEALS SECTION */
+    /*****************/
+
+    .diets {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    /*******************/
+    /* Pricing SECTION */
+    /*******************/
+
+    .pricing-plan {
+        width: 100%;
+    }
 
     /**********/
     /* FOOTER */
     /**********/
+
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+
+    .logo-col,
+    .address-col {
+        grid-column: span 3;
+    }
 }
 
 /******************************************************************************************/
