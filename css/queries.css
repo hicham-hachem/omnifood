@@ -326,71 +326,98 @@ Instead, 1rem = 1em = 16px */
 /******************************************************************************************/
 
 /*************************************/
-/* BELLOW 1200px (Landscape Tablets) */
+/* BELLOW 544px (Phones) */
 /*************************************/
 
-@media (max-width: 600px) {
-
-    /************/
-    /* CSS RESET*/
-    /************/
+@media (max-width: 34em) {
 
     /************/
     /* CSS GRID */
     /************/
 
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
     /******************************/
     /* GENERAL REUSABLE COMPONENTS*/
     /******************************/
 
-    /******************/
-    /* HELPER CLASSES */
-    /******************/
-
-    /**********/
-    /* HEADER */
-    /**********/
-
-    /**************/
-    /* NAVIGATION */
-    /**************/
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
 
     /****************/
     /* HERO SECTION */
     /****************/
 
+    .section-hero {
+        padding: 2.4 0 6.4 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
 
     /***********************/
     /* FEATURED IN SECTION */
     /***********************/
 
+    .logos img {
+        height: 1.2rem;
+    }
 
-    /************************/
-    /* HOW IT WORKS SECTION */
-    /************************/
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
 
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
 
-    /*****************/
-    /* MEALS SECTION */
-    /*****************/
-
+    .step-img-box {
+        transform: translateY(2.4rem);
+    }
 
     /************************/
     /* TESTIMONIALS SECTION */
     /************************/
 
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
 
-    /*******************/
-    /* Pricing SECTION */
-    /*******************/
-
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem;
+    }
 
     /***************/
     /* CTA SECTION */
     /***************/
 
+    .cta {
+        grid-template-columns: 1fr;
+    }
 
-    /**********/
-    /* FOOTER */
-    /**********/
+    .cta-text-box {
+        padding: 3.2rem;
+    }
+
+    .cta-img-box {
+        height: 32rem;
+        grid-row: 1;
+    }
 }
