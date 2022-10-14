@@ -77,6 +77,10 @@ html {
     
     /* It dosen't work with jonas on the body */
     /* overflow-x: hidden; */
+
+    /* For scroll animation */
+    /* Does NOT work on safari */
+    /* scroll-behavior: smooth; */
 }
 
 body {
